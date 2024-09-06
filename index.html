@@ -1,0 +1,23 @@
+<head>
+    <title>ELA</title>
+</head>
+<body>
+    <img id="imagem" src="dona.jpg" alt="Imagem Secreta" style="display:none;">
+    <p id="mensagem"></p> <!-- Aqui será inserida a mensagem -->
+
+    <script>
+        // Aguarda o carregamento completo do conteúdo da página
+        document.addEventListener("DOMContentLoaded", function() {
+            const senha = prompt("Qual a senha?");
+            
+            if (senha === "ela") {
+                document.getElementById("imagem").style.display = "block";
+                // Adiciona o texto em vez de usar document.write
+                document.getElementById("mensagem").innerHTML = ". ..- / .- -- .- ...- .- --..-- / . .-.. .- / ..-. ..- --. .. ..- --..-- / . .-.. .- / -.-. .- .. ..- / -.. . .-.. .- ..--.. / . .-.. .- / ... . / .--- --- --. --- ..- ..--.. / ... --- / ... --- -... .-. --- ..- / --- / -.-. --- .-. .--. ---";
+            } else {
+                alert(". .-. .-. .- -.. ---");
+            }
+        });
+    </script>
+</body>
+</html>
